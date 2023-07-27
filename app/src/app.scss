@@ -1,0 +1,35 @@
+@tailwind utilities;
+@tailwind components;
+@tailwind base;
+
+@import 'lib/styles/calendar.scss';
+@import 'lib/styles/plotly.scss';
+@import 'lib/styles/button.scss';
+
+@import 'lib/styles/mixins.scss';
+
+body{
+	background-color: theme( 'colors.bg' );
+	font-family: 'Inter', sans-serif;
+	color: theme( 'colors.white' );
+	font-size: 14px;
+	overflow-y: scroll;
+}
+
+// scrollbar
+*::-webkit-scrollbar {
+	width: 10px;
+}
+*::-webkit-scrollbar-track {
+	background: theme( 'colors.gray-light' );
+}
+*::-webkit-scrollbar-thumb {
+  background-color: theme( 'colors.gray-dark' );
+  border-radius: 5px;
+	border: none;
+}
+
+* { //currently Firefox-only
+	scrollbar-width: thin;
+	scrollbar-color: theme( 'colors.gray-dark' ) theme( 'colors.gray-light' );
+}

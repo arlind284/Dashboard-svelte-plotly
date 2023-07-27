@@ -1,0 +1,92 @@
+.litepicker{
+	font-size: 18px;
+	font-family: 'Inter', sans-serif;
+
+	.container__months{
+		width: calc( var( --litepicker-month-width ) + 24px ) !important;
+	}
+
+	.month-item{
+		padding: 12px 12px !important;
+	}
+
+	.month-item-weekdays-row{
+		>div{
+			color: theme('colors.black');
+			&:first-letter{
+			}
+		}
+	}
+
+	.day-item{
+		padding: 8px 0 !important;
+		&:hover{
+			color: theme( 'colors.blue' ) !important;
+			box-shadow: inset 0 0 0 1px theme( 'colors.blue' ) !important;
+		}
+	}
+
+	.is-in-range{
+		background-color: theme( 'colors.blue') !important;
+		color: theme( 'colors.white') !important;
+	}
+
+	.is-start-date:not(.is-flipped){
+		background-color: theme( 'colors.blue') !important;
+		border-top-left-radius: 24px !important;
+		border-bottom-left-radius: 24px !important;
+	}
+
+	.is-start-date{
+		&:hover{
+			color: theme( 'colors.white') !important;
+		}
+	}
+
+	.is-start-date.is-flipped{
+		background-color: theme( 'colors.blue') !important;
+		border-top-right-radius: 24px !important;
+		border-bottom-right-radius: 24px !important;
+		border-top-left-radius: 0px !important;
+		border-bottom-left-radius: 0px !important;
+	}
+
+	.is-end-date:not(.is-flipped){
+		background-color: theme( 'colors.blue') !important;
+		border-top-right-radius: 24px !important;
+		border-bottom-right-radius: 24px !important;
+	}
+
+	.is-end-date.is-flipped{
+		background-color: theme( 'colors.blue') !important;
+		border-top-left-radius: 24px !important;
+		border-bottom-left-radius: 24px !important;
+		border-top-right-radius: 0px !important;
+		border-bottom-right-radius: 0px !important;
+	}
+
+	.is-end-date{
+		&:hover{
+			color: theme( 'colors.white') !important;
+		}
+	}
+
+	.button-previous-month{
+		cursor: pointer !important;
+		&:hover{
+			svg{
+				fill: theme( 'colors.blue') !important;
+			}
+		}
+	}
+
+	.button-next-month{
+		cursor: pointer !important;
+		&:hover{
+			svg{
+				fill: theme( 'colors.blue') !important;
+			}
+		}
+	}
+
+}

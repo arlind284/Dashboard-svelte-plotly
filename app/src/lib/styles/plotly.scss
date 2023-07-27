@@ -1,0 +1,10 @@
+.modebar{
+	.modebar-group:nth-child(1),
+	.modebar-group:nth-child(4){
+		display: none !important;
+	}
+	.modebar-group:nth-child(2),
+	.modebar-group:nth-child(3){
+		padding: 10px !important;
+	}
+}
